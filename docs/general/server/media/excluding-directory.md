@@ -49,6 +49,7 @@ For example, a `.ignore` containing the following:
 ```txt
 *.avi
 sample.mkv
+sample/[2005/].mkv
 specials/
 ```
 
@@ -56,4 +57,5 @@ Will trigger Jellyfin to ignore:
 
 * any file that ends with `.avi`.
 * any file named exactly `sample.mkv`.
+* any file named exactly `sample[2005].mkv`; note escape characters are necessary.
 * the subdirectory `specials` and all files under it.
